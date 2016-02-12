@@ -85,13 +85,11 @@ public class GameBoard extends TilePane
 		ArrayList<Tile> tiles = null;
 		tiles = randomize(vertices);
 		
-		System.out.println(getChildren());
 //		if(getChildren().get(0) == null)
 //			System.out.println("it is null");
 		
 		while(!getChildren().toString().equals("[]"))
 		{
-			System.out.println("here");
 			getChildren().remove(0);
 		}
 		getChildren().addAll(row1, row2, row3, row4, row5);
